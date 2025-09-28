@@ -1,12 +1,14 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 const ContactPage: React.FC = () => {
+  const { t } = useTranslation();
 
   const contactInfo = [
     {
       icon: MapPin,
-      title: "Adresimiz",
+      title: t('contact.info.address'),
       details: [
         "123 Sürücü Akademi Caddesi",
         "Çankaya, Ankara 06000",
@@ -15,7 +17,7 @@ const ContactPage: React.FC = () => {
     },
     {
       icon: Phone, 
-      title: "Telefon",
+      title: t('contact.info.phone'),
       details: [
         "(312) 123-4567",
         "(312) 123-456",
@@ -24,7 +26,7 @@ const ContactPage: React.FC = () => {
     },
     {
       icon: Mail,
-      title: "E-posta",
+      title: t('contact.info.email'),
       details: [
         "info@surucu-akademi.com",
         "kayit@surucu-akademi.com", 
@@ -33,7 +35,7 @@ const ContactPage: React.FC = () => {
     },
     {
       icon: Clock,
-      title: "Çalışma Saatleri",
+      title: t('contact.info.hours'),
       details: [
         "Pazartesi - Cuma: 08:00 - 18:00",
         "Cumartesi: 09:00 - 16:00",
@@ -69,11 +71,10 @@ const ContactPage: React.FC = () => {
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            İletişim
+            {t('contact.hero.title')}
           </h1>
           <p className="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto">
-            Sorularınız mı var? Size yardımcı olmaktan mutluluk duyarız. 
-            Bizimle iletişime geçin ve hayalinizdeki ehliyete ulaşma yolculuğunuza başlayın.
+            {t('contact.hero.description')}
           </p>
         </div>
       </section>
@@ -84,10 +85,10 @@ const ContactPage: React.FC = () => {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
-                İletişim Bilgileri
+                {t('contact.info.title')}
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300">
-                Sorularınız ve talepleriniz için aşağıdaki iletişim kanallarından bize ulaşabilirsiniz.
+                {t('contact.info.description')}
               </p>
             </div>
 
@@ -124,10 +125,10 @@ const ContactPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              Şubelerimiz
+              {t('contact.branches.title')}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              Size en yakın şubemizi ziyaret ederek detaylı bilgi alabilirsiniz.
+              {t('contact.branches.description')}
             </p>
           </div>
 
@@ -161,7 +162,7 @@ const ContactPage: React.FC = () => {
                     </div>
                   </div>
                   <button className="w-full bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 font-semibold py-3 px-4 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors">
-                    Yol Tarifi Al
+                    {t('contact.branches.getDirections')}
                   </button>
                 </div>
               </div>
@@ -175,10 +176,10 @@ const ContactPage: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              Sıkça Sorulan Sorular
+              {t('contact.faq.title')}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              Merak ettiğiniz soruların cevaplarını bulun
+              {t('contact.faq.description')}
             </p>
           </div>
 
@@ -226,18 +227,17 @@ const ContactPage: React.FC = () => {
       <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-6">
-            Hemen Başlayın!
+            {t('contact.cta.title')}
           </h2>
           <p className="text-xl opacity-90 mb-8">
-            Sürücü Akademi ile güvenli sürüş yolculuğunuza bugün başlayın. 
-            Uzman ekibimiz size en iyi eğitimi sunmaya hazır.
+            {t('contact.cta.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button className="bg-white text-blue-600 font-bold px-8 py-4 rounded-xl hover:bg-gray-100 transition-colors transform hover:scale-105">
-              Şimdi Arayın: (312) 123-4567
+              {t('contact.cta.callNow')}
             </button>
             <button className="bg-blue-800 text-white font-bold px-8 py-4 rounded-xl hover:bg-blue-900 transition-colors transform hover:scale-105">
-              Detaylı Bilgi Alın
+              {t('contact.cta.getInfo')}
             </button>
           </div>
         </div>

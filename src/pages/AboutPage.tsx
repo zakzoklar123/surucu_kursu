@@ -1,29 +1,32 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Award, Users, Calendar, Target, Eye, Heart } from 'lucide-react';
 
 const AboutPage: React.FC = () => {
+  const { t } = useTranslation();
+  
   const stats = [
-    { number: "18+", label: "Yıllık Deneyim", icon: Calendar },
-    { number: "5,000+", label: "Mezun Öğrenci", icon: Users },
-    { number: "95%", label: "Başarı Oranı", icon: Award },
-    { number: "15", label: "Uzman Eğitmen", icon: Target }
+    { number: "18+", label: t('about.stats.experience'), icon: Calendar },
+    { number: "5,000+", label: t('about.stats.graduates'), icon: Users },
+    { number: "95%", label: t('about.stats.success'), icon: Award },
+    { number: "15", label: t('about.stats.instructors'), icon: Target }
   ];
 
   const values = [
     {
       icon: Target,
-      title: "Misyonumuz",
-      description: "Güvenli, bilinçli ve sorumlu sürücüler yetiştirerek trafik güvenliğine katkıda bulunmak."
+      title: t('about.values.mission'),
+      description: t('about.values.missionDesc')
     },
     {
       icon: Eye,
-      title: "Vizyonumuz", 
-      description: "Türkiye'nin en güvenilir ve kaliteli sürücü kursu olmak, sektörde öncü rol oynamak."
+      title: t('about.values.vision'), 
+      description: t('about.values.visionDesc')
     },
     {
       icon: Heart,
-      title: "Değerlerimiz",
-      description: "Güvenlik, kalite, saygı ve sürekli gelişim ilkelerimizle hizmet sunuyoruz."
+      title: t('about.values.valuesTitle'),
+      description: t('about.values.valuesDesc')
     }
   ];
 
@@ -69,11 +72,10 @@ const AboutPage: React.FC = () => {
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Hakkımızda
+            {t('about.hero.title')}
           </h1>
           <p className="text-xl md:text-2xl opacity-90 max-w-4xl mx-auto">
-            2005'ten beri güvenli sürüş eğitiminde öncü kuruluş. Misyonumuz, vizyonumuz ve 
-            değerlerimizle Türkiye'nin en güvenilir sürücü kursu olmaya devam ediyoruz.
+            {t('about.hero.description')}
           </p>
         </div>
       </section>
@@ -83,10 +85,10 @@ const AboutPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              Başarılarımız Rakamlarla
+              {t('about.stats.title')}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              18 yıllık deneyimimizle elde ettiğimiz başarılar
+              {t('about.stats.description')}
             </p>
           </div>
 
@@ -119,10 +121,10 @@ const AboutPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              Misyonumuz, Vizyonumuz & Değerlerimiz
+              {t('about.values.title')}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              Bizi yönlendiren ilkeler ve hedefler
+              {t('about.values.description')}
             </p>
           </div>
 
@@ -227,10 +229,10 @@ const AboutPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              Uzman Kadromuz
+              {t('about.team.title')}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              Deneyimli ve sertifikalı eğitmenlerimizle tanışın
+              {t('about.team.description')}
             </p>
           </div>
 
@@ -319,18 +321,17 @@ const AboutPage: React.FC = () => {
       <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-6">
-            Sürücü Akademi Ailesine Katılın
+            {t('about.cta.title')}
           </h2>
           <p className="text-xl opacity-90 mb-8">
-            18 yıllık deneyimimiz ve binlerce mezunumuzla güvenli sürüş yolculuğunuzda 
-            yanınızdayız. Siz de başarı hikayemizin bir parçası olun.
+            {t('about.cta.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button className="bg-white text-blue-600 font-bold px-8 py-4 rounded-xl hover:bg-gray-100 transition-colors transform hover:scale-105">
-              Bize Ulaşın
+              {t('about.cta.contact')}
             </button>
             <button className="bg-blue-800 text-white font-bold px-8 py-4 rounded-xl hover:bg-blue-900 transition-colors transform hover:scale-105">
-              Eğitim Programlarını Görüntüle
+              {t('about.cta.programs')}
             </button>
           </div>
         </div>

@@ -1,7 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Clock, Users, Award, BookOpen, Car, Shield } from 'lucide-react';
 
 const CoursesPage: React.FC = () => {
+  const { t } = useTranslation();
   const courses = [
     {
       title: "Temel Sürücü Kursu (B Sınıfı)",
@@ -98,11 +101,10 @@ const CoursesPage: React.FC = () => {
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 px-4">
-            Sürücü Kursları
+            {t('courses.hero.title')}
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl opacity-90 max-w-3xl mx-auto px-4 leading-relaxed">
-            Profesyonel eğitmenlerimiz ve modern araç filomuz ile güvenli sürüş öğrenin. 
-            Her seviyeye uygun kurslarımız ile hayalinizdeki ehliyete sahip olun.
+            {t('courses.hero.description')}
           </p>
         </div>
       </section>

@@ -1,0 +1,167 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "courses": "Kurslar",
+    "licenseTypes": "Ehliyet Türleri",
+    "pricing": "Fiyatlar",
+    "contact": "İletişim"
+  },
+  "home": {
+    "hero": {
+      "title": "Ankara'nın En Güvenilir",
+      "subtitle": "Sürücü Kursu",
+      "description": "18 yıllık deneyimimiz ve uzman eğitmen kadromuzla güvenli sürüş eğitimi veriyoruz. Teorik ve pratik eğitimlerimizle ehliyet alma yolculuğunuzda yanınızdayız.",
+      "startEducation": "Eğitim Programları",
+      "viewPricing": "Fiyatları Görüntüle"
+    },
+    "education": {
+      "title": "Kapsamlı Sürücü Eğitimi",
+      "description": "Uzman eğitmenlerimiz tarafından verilen teorik ve praktik eğitimlerle güvenli sürücü olma yolculuğunuzu başlatın.",
+      "courses": {
+        "theoretical": "Teorik Eğitim Programı",
+        "practical": "Pratik Direksiyon Dersleri",
+        "simulator": "Simülatör Eğitimleri"
+      },
+      "start": "Başla"
+    },
+    "schedule": {
+      "title": "Ders Programı ve Duyurular",
+      "description": "Eğitim programlarımızın tarihlerini ve önemli duyuruları buradan takip edebilirsiniz.",
+      "practicalStart": "Pratik Eğitim Başlangıcı",
+      "practicalDate": "15 Temmuz - Kayıt son tarihi: 10 Temmuz",
+      "theoreticalStart": "Teorik Eğitim Başlangıcı",
+      "theoreticalDate": "28 Temmuz - Kayıt son tarihi: 22 Temmuz"
+    },
+    "resources": {
+      "title": "Eğitim Destekleri",
+      "description": "Öğrenme sürecinizi destekleyecek ek eğitim materyalleri ve kaynaklar.",
+      "items": {
+        "notes": "Ders Notları",
+        "notesDesc": "Kapsamlı konu özetleri.",
+        "tips": "Eğitim İpuçları",
+        "tipsDesc": "Öğrenme stratejileri.",
+        "faq": "SSS",
+        "faqDesc": "Sıkça sorulan sorular.",
+        "stories": "Mezun Hikayeleri",
+        "storiesDesc": "Başarılı öğrenci hikayeleri."
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Hakkımızda",
+      "description": "2005'ten beri güvenli sürüş eğitiminde öncü kuruluş. Misyonumuz, vizyonumuz ve değerlerimizle Türkiye'nin en güvenilir sürücü kursu olmaya devam ediyoruz."
+    },
+    "stats": {
+      "title": "Başarılarımız Rakamlarla",
+      "description": "18 yıllık deneyimimizle elde ettiğimiz başarılar",
+      "experience": "Yıllık Deneyim",
+      "graduates": "Mezun Öğrenci",
+      "success": "Başarı Oranı",
+      "instructors": "Uzman Eğitmen"
+    },
+    "values": {
+      "title": "Misyonumuz, Vizyonumuz & Değerlerimiz",
+      "description": "Bizi yönlendiren ilkeler ve hedefler",
+      "mission": "Misyonumuz",
+      "missionDesc": "Güvenli, bilinçli ve sorumlu sürücüler yetiştirerek trafik güvenliğine katkıda bulunmak.",
+      "vision": "Vizyonumuz",
+      "visionDesc": "Türkiye'nin en güvenilir ve kaliteli sürücü kursu olmak, sektörde öncü rol oynamak.",
+      "valuesTitle": "Değerlerimiz",
+      "valuesDesc": "Güvenlik, kalite, saygı ve sürekli gelişim ilkelerimizle hizmet sunuyoruz."
+    },
+    "team": {
+      "title": "Uzman Kadromuz",
+      "description": "Deneyimli ve sertifikalı eğitmenlerimizle tanışın"
+    },
+    "cta": {
+      "title": "Sürücü Akademi Ailesine Katılın",
+      "description": "18 yıllık deneyimimiz ve binlerce mezunumuzla güvenli sürüş yolculuğunuzda yanınızdayız. Siz de başarı hikayemizin bir parçası olun.",
+      "contact": "Bize Ulaşın",
+      "programs": "Eğitim Programlarını Görüntüle"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "İletişim",
+      "description": "Sorularınız mı var? Size yardımcı olmaktan mutluluk duyarız. Bizimle iletişime geçin ve hayalinizdeki ehliyete ulaşma yolculuğunuza başlayın."
+    },
+    "info": {
+      "title": "İletişim Bilgileri",
+      "description": "Sorularınız ve talepleriniz için aşağıdaki iletişim kanallarından bize ulaşabilirsiniz.",
+      "address": "Adresimiz",
+      "phone": "Telefon",
+      "email": "E-posta",
+      "hours": "Çalışma Saatleri"
+    },
+    "branches": {
+      "title": "Şubelerimiz",
+      "description": "Size en yakın şubemizi ziyaret ederek detaylı bilgi alabilirsiniz.",
+      "getDirections": "Yol Tarifi Al"
+    },
+    "faq": {
+      "title": "Sıkça Sorulan Sorular",
+      "description": "Merak ettiğiniz soruların cevaplarını bulun"
+    },
+    "cta": {
+      "title": "Hemen Başlayın!",
+      "description": "Sürücü Akademi ile güvenli sürüş yolculuğunuza bugün başlayın. Uzman ekibimiz size en iyi eğitimi sunmaya hazır.",
+      "callNow": "Şimdi Arayın: (312) 123-4567",
+      "getInfo": "Detaylı Bilgi Alın"
+    }
+  },
+  "footer": {
+    "company": "Sürücü Akademi",
+    "description": "18 yıllık deneyimimizle güvenli sürüş eğitiminde öncü kurumuz.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "services": "Hizmetlerimiz",
+    "contact": "İletişim",
+    "followUs": "Bizi Takip Edin",
+    "rights": "Tüm hakları saklıdır."
+  },
+  "language": {
+    "turkish": "Türkçe",
+    "english": "English",
+    "changeLanguage": "Dili Değiştir"
+  },
+  "courses": {
+    "hero": {
+      "title": "Sürücü Kursları",
+      "description": "Profesyonel eğitmenlerimiz ve modern araç filomuz ile güvenli sürüş öğrenin. Her seviyeye uygun kurslarımız ile hayalinizdeki ehliyete sahip olun."
+    }
+  },
+  "pricing": {
+    "hero": {
+      "title": "Fiyat Listesi",
+      "description": "Uygun fiyatlarla kaliteli eğitim"
+    }
+  },
+  "licenseTypes": {
+    "hero": {
+      "title": "Ehliyet Türleri",
+      "description": "Tüm ehliyet sınıfları için eğitim"
+    }
+  },
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Bir hata oluştu",
+    "retry": "Tekrar Dene",
+    "close": "Kapat",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "confirm": "Onayla",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "view": "Görüntüle",
+    "download": "İndir",
+    "upload": "Yükle",
+    "search": "Ara",
+    "filter": "Filtrele",
+    "sort": "Sırala",
+    "next": "Sonraki",
+    "previous": "Önceki",
+    "first": "İlk",
+    "last": "Son"
+  }
+}

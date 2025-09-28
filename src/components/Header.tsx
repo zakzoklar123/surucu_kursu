@@ -1,18 +1,20 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Car, Menu, X } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const { t } = useTranslation();
 
   const navigation = [
-    { name: 'Ana Sayfa', href: '/' },
-    { name: 'Kurslar', href: '/courses' },
-    { name: 'Ehliyet Tipleri', href: '/license-types' },
-    { name: 'Fiyatlar', href: '/pricing' },
-    { name: 'Hakkımızda', href: '/about' },
-    { name: 'İletişim', href: '/contact' },
+    { name: t('nav.home'), href: '/' },
+    { name: t('nav.courses'), href: '/courses' },
+    { name: t('nav.licenseTypes'), href: '/license-types' },
+    { name: t('nav.pricing'), href: '/pricing' },
+    { name: t('nav.about'), href: '/about' },
+    { name: t('nav.contact'), href: '/contact' },
   ];
 
   const isActive = (path: string) => location.pathname === path;

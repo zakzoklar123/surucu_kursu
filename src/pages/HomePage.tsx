@@ -1,33 +1,35 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { GraduationCap, Calendar, FileText, Lightbulb, HelpCircle, Star } from 'lucide-react';
 
 const HomePage: React.FC = () => {
+  const { t } = useTranslation();
+  
   return (
     <div>
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 via-white to-blue-50 pt-16 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-gray-900 tracking-tight mb-6">
-            Ankara'nın En Güvenilir<br />
-            <span className="text-blue-600">Sürücü Kursu</span>
+            {t('home.hero.title')}<br />
+            <span className="text-blue-600">{t('home.hero.subtitle')}</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed">
-            18 yıllık deneyimimiz ve uzman eğitmen kadromuzla güvenli sürüş eğitimi veriyoruz. 
-            Teorik ve pratik eğitimlerimizle ehliyet alma yolculuğunuzda yanınızdayız.
+            {t('home.hero.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link
               to="/courses"
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-xl text-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
-              Eğitim Programları
+              {t('home.hero.startEducation')}
             </Link>
             <Link
               to="/pricing"
               className="bg-white hover:bg-gray-50 text-blue-600 font-bold px-8 py-4 rounded-xl text-lg border-2 border-blue-600 transition-all duration-200 transform hover:scale-105"
             >
-              Fiyatları Görüntüle
+              {t('home.hero.viewPricing')}
             </Link>
           </div>
         </div>
@@ -39,26 +41,25 @@ const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Kapsamlı Sürücü Eğitimi
+              {t('home.education.title')}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Uzman eğitmenlerimiz tarafından verilen teorik ve praktik eğitimlerle 
-              güvenli sürücü olma yolculuğunuzu başlatın.
+              {t('home.education.description')}
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "Teorik Eğitim Programı",
+                title: t('home.education.courses.theoretical'),
                 image: "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=400",
               },
               {
-                title: "Pratik Direksiyon Dersleri",
+                title: t('home.education.courses.practical'),
                 image: "https://images.pexels.com/photos/1335077/pexels-photo-1335077.jpeg?auto=compress&cs=tinysrgb&w=400",
               },
               {
-                title: "Simülatör Eğitimleri",
+                title: t('home.education.courses.simulator'),
                 image: "https://images.pexels.com/photos/2977304/pexels-photo-2977304.jpeg?auto=compress&cs=tinysrgb&w=400",
               },
             ].map((course, index) => (
@@ -83,7 +84,7 @@ const HomePage: React.FC = () => {
                       </button>
                     </div>
                     <div className="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-bold transform translate-x-10 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 delay-150">
-                      Başla
+                      {t('home.education.start')}
                     </div>
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-all duration-300 transform group-hover:translate-x-2">
@@ -102,10 +103,10 @@ const HomePage: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div className="space-y-8">
               <h2 className="text-4xl font-bold text-gray-900 dark:text-white">
-                Ders Programı ve Duyurular
+                {t('home.schedule.title')}
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300">
-                Eğitim programlarımızın tarihlerini ve önemli duyuruları buradan takip edebilirsiniz.
+                {t('home.schedule.description')}
               </p>
               
               <div className="space-y-4">
@@ -118,10 +119,10 @@ const HomePage: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1 group-hover:text-blue-600 transition-colors">
-                      Pratik Eğitim Başlangıcı
+                      {t('home.schedule.practicalStart')}
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300 group-hover:text-gray-700 transition-colors">
-                      15 Temmuz - Kayıt son tarihi: 10 Temmuz
+                      {t('home.schedule.practicalDate')}
                     </p>
                   </div>
                   <div className="ml-auto opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-4 group-hover:translate-x-0">
@@ -138,10 +139,10 @@ const HomePage: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1 group-hover:text-green-600 transition-colors">
-                      Teorik Eğitim Başlangıcı
+                      {t('home.schedule.theoreticalStart')}
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300 group-hover:text-gray-700 transition-colors">
-                      28 Temmuz - Kayıt son tarihi: 22 Temmuz
+                      {t('home.schedule.theoreticalDate')}
                     </p>
                   </div>
                   <div className="ml-auto opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-4 group-hover:translate-x-0">
@@ -192,19 +193,19 @@ const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Eğitim Destekleri
+              {t('home.resources.title')}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Öğrenme sürecinizi destekleyecek ek eğitim materyalleri ve kaynaklar.
+              {t('home.resources.description')}
             </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: FileText, title: "Ders Notları", description: "Kapsamlı konu özetleri." },
-              { icon: Lightbulb, title: "Eğitim İpuçları", description: "Öğrenme stratejileri." },
-              { icon: HelpCircle, title: "SSS", description: "Sıkça sorulan sorular." },
-              { icon: Star, title: "Mezun Hikayeleri", description: "Başarılı öğrenci hikayeleri." },
+              { icon: FileText, title: t('home.resources.items.notes'), description: t('home.resources.items.notesDesc') },
+              { icon: Lightbulb, title: t('home.resources.items.tips'), description: t('home.resources.items.tipsDesc') },
+              { icon: HelpCircle, title: t('home.resources.items.faq'), description: t('home.resources.items.faqDesc') },
+              { icon: Star, title: t('home.resources.items.stories'), description: t('home.resources.items.storiesDesc') },
             ].map((resource, index) => {
               const IconComponent = resource.icon;
               return (

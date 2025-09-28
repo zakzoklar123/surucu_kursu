@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import LanguageSwitcher from './components/LanguageSwitcher';
 import HomePage from './pages/HomePage';
 import CoursesPage from './pages/CoursesPage';
 import LicenseTypesPage from './pages/LicenseTypesPage';
@@ -27,6 +28,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <LanguageSwitcher />
       </div>
     </Router>
   );

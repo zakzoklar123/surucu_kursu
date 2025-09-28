@@ -1,0 +1,167 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "courses": "Courses",
+    "licenseTypes": "License Types",
+    "pricing": "Pricing",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Ankara's Most Reliable",
+      "subtitle": "Driving School",
+      "description": "With 18 years of experience and our expert instructor team, we provide safe driving education. We are with you on your journey to get a license with our theoretical and practical training.",
+      "startEducation": "Education Programs",
+      "viewPricing": "View Pricing"
+    },
+    "education": {
+      "title": "Comprehensive Driver Education",
+      "description": "Start your journey to become a safe driver with theoretical and practical training provided by our expert instructors.",
+      "courses": {
+        "theoretical": "Theoretical Education Program",
+        "practical": "Practical Driving Lessons",
+        "simulator": "Simulator Training"
+      },
+      "start": "Start"
+    },
+    "schedule": {
+      "title": "Class Schedule and Announcements",
+      "description": "You can follow the dates of our education programs and important announcements here.",
+      "practicalStart": "Practical Training Start",
+      "practicalDate": "July 15 - Registration deadline: July 10",
+      "theoreticalStart": "Theoretical Training Start",
+      "theoreticalDate": "July 28 - Registration deadline: July 22"
+    },
+    "resources": {
+      "title": "Educational Support",
+      "description": "Additional educational materials and resources to support your learning process.",
+      "items": {
+        "notes": "Course Notes",
+        "notesDesc": "Comprehensive topic summaries.",
+        "tips": "Educational Tips",
+        "tipsDesc": "Learning strategies.",
+        "faq": "FAQ",
+        "faqDesc": "Frequently asked questions.",
+        "stories": "Graduate Stories",
+        "storiesDesc": "Successful student stories."
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About Us",
+      "description": "Leading organization in safe driving education since 2005. With our mission, vision and values, we continue to be Turkey's most reliable driving school."
+    },
+    "stats": {
+      "title": "Our Achievements in Numbers",
+      "description": "The achievements we have achieved with our 18 years of experience",
+      "experience": "Years of Experience",
+      "graduates": "Graduate Students",
+      "success": "Success Rate",
+      "instructors": "Expert Instructors"
+    },
+    "values": {
+      "title": "Our Mission, Vision & Values",
+      "description": "The principles and goals that guide us",
+      "mission": "Our Mission",
+      "missionDesc": "To contribute to traffic safety by training safe, conscious and responsible drivers.",
+      "vision": "Our Vision",
+      "visionDesc": "To be Turkey's most reliable and quality driving school, to play a leading role in the sector.",
+      "valuesTitle": "Our Values",
+      "valuesDesc": "We provide service with our principles of safety, quality, respect and continuous improvement."
+    },
+    "team": {
+      "title": "Our Expert Team",
+      "description": "Meet our experienced and certified instructors"
+    },
+    "cta": {
+      "title": "Join the Driving Academy Family",
+      "description": "With our 18 years of experience and thousands of graduates, we are with you on your safe driving journey. You too can be part of our success story.",
+      "contact": "Contact Us",
+      "programs": "View Education Programs"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact",
+      "description": "Do you have questions? We would be happy to help you. Contact us and start your journey to achieve your dream license."
+    },
+    "info": {
+      "title": "Contact Information",
+      "description": "You can contact us through the following communication channels for your questions and requests.",
+      "address": "Our Address",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Working Hours"
+    },
+    "branches": {
+      "title": "Our Branches",
+      "description": "You can get detailed information by visiting our nearest branch.",
+      "getDirections": "Get Directions"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "description": "Find answers to questions you are curious about"
+    },
+    "cta": {
+      "title": "Get Started Now!",
+      "description": "Start your safe driving journey today with Driving Academy. Our expert team is ready to provide you with the best education.",
+      "callNow": "Call Now: (312) 123-4567",
+      "getInfo": "Get Detailed Information"
+    }
+  },
+  "footer": {
+    "company": "Driving Academy",
+    "description": "We are a leading institution in safe driving education with 18 years of experience.",
+    "quickLinks": "Quick Links",
+    "services": "Our Services",
+    "contact": "Contact",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved."
+  },
+  "language": {
+    "turkish": "Türkçe",
+    "english": "English",
+    "changeLanguage": "Change Language"
+  },
+  "courses": {
+    "hero": {
+      "title": "Driving Courses",
+      "description": "Learn safe driving with our professional instructors and modern vehicle fleet. Achieve your dream license with our courses suitable for every level."
+    }
+  },
+  "pricing": {
+    "hero": {
+      "title": "Pricing",
+      "description": "Quality education at affordable prices"
+    }
+  },
+  "licenseTypes": {
+    "hero": {
+      "title": "License Types",
+      "description": "Training for all license classes"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Try Again",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "download": "Download",
+    "upload": "Upload",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "next": "Next",
+    "previous": "Previous",
+    "first": "First",
+    "last": "Last"
+  }
+}
