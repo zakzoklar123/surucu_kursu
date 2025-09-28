@@ -129,18 +129,39 @@ const AboutPage: React.FC = () => {
           <div className="grid lg:grid-cols-3 gap-12">
             {values.map((value, index) => {
               const IconComponent = value.icon;
+              const cardColors = [
+                {
+                  bg: "bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/40",
+                  border: "border-blue-200 dark:border-blue-700",
+                  icon: "bg-blue-600",
+                  accent: "text-blue-600 dark:text-blue-400"
+                },
+                {
+                  bg: "bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/40",
+                  border: "border-green-200 dark:border-green-700",
+                  icon: "bg-green-600",
+                  accent: "text-green-600 dark:text-green-400"
+                },
+                {
+                  bg: "bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/40",
+                  border: "border-purple-200 dark:border-purple-700",
+                  icon: "bg-purple-600",
+                  accent: "text-purple-600 dark:text-purple-400"
+                }
+              ];
+              const colorScheme = cardColors[index];
               return (
                 <div
                   key={index}
-                  className="text-center p-8 bg-gradient-to-br from-blue-50 to-white dark:from-blue-900/20 dark:to-gray-800 rounded-2xl shadow-lg border border-blue-100 dark:border-blue-900/30"
+                  className={`text-center p-8 ${colorScheme.bg} rounded-2xl shadow-lg border ${colorScheme.border} hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2`}
                 >
-                  <div className="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className={`${colorScheme.icon} text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg`}>
                     <IconComponent className="h-8 w-8" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                  <h3 className={`text-2xl font-bold ${colorScheme.accent} mb-4`}>
                     {value.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  <p className="text-gray-700 dark:text-gray-200 leading-relaxed font-medium">
                     {value.description}
                   </p>
                 </div>
@@ -309,7 +330,7 @@ const AboutPage: React.FC = () => {
               Bize Ulaşın
             </button>
             <button className="bg-blue-800 text-white font-bold px-8 py-4 rounded-xl hover:bg-blue-900 transition-colors transform hover:scale-105">
-              Kursa Başvuru Yapın
+              Eğitim Programlarını Görüntüle
             </button>
           </div>
         </div>

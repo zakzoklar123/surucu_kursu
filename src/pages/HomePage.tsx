@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Smartphone, GraduationCap, Calendar, FileText, Lightbulb, HelpCircle, Star, Play } from 'lucide-react';
+import { GraduationCap, Calendar, FileText, Lightbulb, HelpCircle, Star } from 'lucide-react';
 
 const HomePage: React.FC = () => {
   return (
@@ -9,19 +9,19 @@ const HomePage: React.FC = () => {
       <section className="bg-gradient-to-br from-blue-50 via-white to-blue-50 pt-16 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-gray-900 tracking-tight mb-6">
-            Ehliyet Sınavına<br />
-            <span className="text-blue-600">Hazırlık Merkezi</span>
+            Ankara'nın En Güvenilir<br />
+            <span className="text-blue-600">Sürücü Kursu</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed">
-            Sınavınıza hazırlanmak için ihtiyacınız olan her şey burada. Sınav sorularından online deneme 
-            sınavlarına ve eğitim videolarına kadar, başarılı olmak için gereken tüm kaynaklara sahibiz.
+            18 yıllık deneyimimiz ve uzman eğitmen kadromuzla güvenli sürüş eğitimi veriyoruz. 
+            Teorik ve pratik eğitimlerimizle ehliyet alma yolculuğunuzda yanınızdayız.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link
               to="/courses"
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-xl text-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
-              Kurslara Başla
+              Eğitim Programları
             </Link>
             <Link
               to="/pricing"
@@ -39,29 +39,29 @@ const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Sürücü Sınavı Eğitim Videoları
+              Kapsamlı Sürücü Eğitimi
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Uzman eğitmenlerimiz tarafından hazırlanan eğitim videolarıyla sınav konularını 
-              detaylı şekilde öğrenin.
+              Uzman eğitmenlerimiz tarafından verilen teorik ve praktik eğitimlerle 
+              güvenli sürücü olma yolculuğunuzu başlatın.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "Temel Sürücülük Bilgileri",
-                image: "https://images.pexels.com/photos/1028434/pexels-photo-1028434.jpeg?auto=compress&cs=tinysrgb&w=400",
+                title: "Teorik Eğitim Programı",
+                image: "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=400",
               },
               {
-                title: "Trafik Kuralları ve İşaretleri",
-                image: "https://images.pexels.com/photos/280195/pexels-photo-280195.jpeg?auto=compress&cs=tinysrgb&w=400",
+                title: "Pratik Direksiyon Dersleri",
+                image: "https://images.pexels.com/photos/1335077/pexels-photo-1335077.jpeg?auto=compress&cs=tinysrgb&w=400",
               },
               {
-                title: "Araç Bakımı ve Güvenli Sürüş",
-                image: "https://images.pexels.com/photos/1119796/pexels-photo-1119796.jpeg?auto=compress&cs=tinysrgb&w=400",
+                title: "Simülatör Eğitimleri",
+                image: "https://images.pexels.com/photos/2977304/pexels-photo-2977304.jpeg?auto=compress&cs=tinysrgb&w=400",
               },
-            ].map((video, index) => (
+            ].map((course, index) => (
               <div 
                 key={index} 
                 className="group cursor-pointer card-flip hover-rotate"
@@ -73,21 +73,21 @@ const HomePage: React.FC = () => {
                 <div className="card-flip-inner">
                   <div className="relative aspect-video rounded-xl overflow-hidden mb-4 shadow-lg transform transition-all duration-500 group-hover:shadow-2xl group-hover:-translate-y-2 group-hover:rotate-1">
                     <img
-                      src={video.image}
-                      alt={video.title}
+                      src={course.image}
+                      alt={course.title}
                       className="w-full h-full object-cover group-hover:scale-125 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-blue/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
                       <button className="bg-white/30 backdrop-blur-sm rounded-full p-4 hover:bg-white/50 transition-all duration-300 transform hover:scale-110 animate-pulse">
-                        <Play className="h-8 w-8 text-white transform group-hover:scale-110 transition-transform" />
+                        <GraduationCap className="h-8 w-8 text-white transform group-hover:scale-110 transition-transform" />
                       </button>
                     </div>
                     <div className="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-bold transform translate-x-10 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 delay-150">
-                      İzle
+                      Başla
                     </div>
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-all duration-300 transform group-hover:translate-x-2">
-                    {video.title}
+                    {course.title}
                   </h3>
                 </div>
               </div>
@@ -102,10 +102,10 @@ const HomePage: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div className="space-y-8">
               <h2 className="text-4xl font-bold text-gray-900 dark:text-white">
-                Sınav Takvimi ve Duyurular
+                Ders Programı ve Duyurular
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300">
-                En güncel sınav tarihlerini ve önemli duyuruları buradan takip edebilirsiniz.
+                Eğitim programlarımızın tarihlerini ve önemli duyuruları buradan takip edebilirsiniz.
               </p>
               
               <div className="space-y-4">
@@ -118,10 +118,10 @@ const HomePage: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1 group-hover:text-blue-600 transition-colors">
-                      Direksiyon Sınavı Tarihi
+                      Pratik Eğitim Başlangıcı
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300 group-hover:text-gray-700 transition-colors">
-                      15 Temmuz - Son başvuru tarihi: 10 Temmuz
+                      15 Temmuz - Kayıt son tarihi: 10 Temmuz
                     </p>
                   </div>
                   <div className="ml-auto opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-4 group-hover:translate-x-0">
@@ -138,10 +138,10 @@ const HomePage: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1 group-hover:text-green-600 transition-colors">
-                      Teorik Sınav Tarihi
+                      Teorik Eğitim Başlangıcı
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300 group-hover:text-gray-700 transition-colors">
-                      28 Temmuz - Son başvuru tarihi: 22 Temmuz
+                      28 Temmuz - Kayıt son tarihi: 22 Temmuz
                     </p>
                   </div>
                   <div className="ml-auto opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-4 group-hover:translate-x-0">
@@ -192,19 +192,19 @@ const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Ek Kaynaklar
+              Eğitim Destekleri
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Sınav hazırlık sürecinizi destekleyecek ek materyaller.
+              Öğrenme sürecinizi destekleyecek ek eğitim materyalleri ve kaynaklar.
             </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: FileText, title: "Sınav Notları", description: "Özetlenmiş konu notları." },
-              { icon: Lightbulb, title: "Sınav İpuçları", description: "Başarı için stratejiler." },
+              { icon: FileText, title: "Ders Notları", description: "Kapsamlı konu özetleri." },
+              { icon: Lightbulb, title: "Eğitim İpuçları", description: "Öğrenme stratejileri." },
               { icon: HelpCircle, title: "SSS", description: "Sıkça sorulan sorular." },
-              { icon: Star, title: "Başarı Hikayeleri", description: "İlham veren hikayeler." },
+              { icon: Star, title: "Mezun Hikayeleri", description: "Başarılı öğrenci hikayeleri." },
             ].map((resource, index) => {
               const IconComponent = resource.icon;
               return (

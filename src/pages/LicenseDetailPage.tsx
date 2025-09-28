@@ -641,7 +641,7 @@ const LicenseDetailPage: React.FC = () => {
                 Şimdi Arayın
               </button>
               <button className="bg-blue-800 text-white font-bold px-8 py-4 rounded-xl hover:bg-blue-900 transition-colors transform hover:scale-105">
-                Online Başvuru
+                Bilgi Alın
               </button>
             </div>
           </div>
